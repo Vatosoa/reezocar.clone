@@ -4,613 +4,403 @@
 
 {% block content %}
 
-
-<div class="container">
-    <div class="welcome-hero-txt">
-        <h2>get your desired car in resonable price</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   magna aliqua. 
-        </p>
-        <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">Souhaitez-vous reprendre votre dernière recherche :
+                    une voiture d'occasion ?</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">Lorem ipsum dolor sit amet consectetur</p>
+                <a class="btn btn-primary btn-xl" href="#about">Voir plus</a>
+            </div>
+        </div>
     </div>
-</div>
+</header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="model-search-content">
-                <div class="row">
-                    <div class="col-md-offset-1 col-md-2 col-sm-12">
-                        <div class="single-model-search">
-                            <h2>select year</h2>
-                            <div class="model-select-icon">
-                                <select class="form-control">
-
-                                      <option value="default">year</option><!-- /.option-->
-
-                                      <option value="2018">2018</option><!-- /.option-->
-
-                                      <option value="2017">2017</option><!-- /.option-->
-                                      <option value="2016">2016</option><!-- /.option-->
-
-                                </select><!-- /.select-->
-                            </div><!-- /.model-select-icon -->
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">D’après votre dernière recherche</h2>
+        <hr class="divider" />
+        <h5 class="text-center mt-0">Retrouvez des annonces correspondant à votre dernière recherche et qui seraient suceptibles de vous intéresser.</h5>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{% static 'assets/img/bg-masthead.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <div class="single-model-search">
-                            <h2>body style</h2>
-                            <div class="model-select-icon">
-                                <select class="form-control">
-
-                                      <option value="default">style</option><!-- /.option-->
-
-                                      <option value="sedan">sedan</option><!-- /.option-->
-
-                                      <option value="van">van</option><!-- /.option-->
-                                      <option value="roadster">roadster</option><!-- /.option-->
-
-                                </select><!-- /.select-->
-                            </div><!-- /.model-select-icon -->
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Cras justo odio</li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
                         </div>
-                    </div>
-                    <div class="col-md-offset-1 col-md-2 col-sm-12">
-                        <div class="single-model-search">
-                            <h2>select make</h2>
-                            <div class="model-select-icon">
-                                <select class="form-control">
-
-                                      <option value="default">make</option><!-- /.option-->
-
-                                      <option value="toyota">toyota</option><!-- /.option-->
-
-                                      <option value="holden">holden</option><!-- /.option-->
-                                      <option value="maecedes-benz">maecedes-benz.</option><!-- /.option-->
-
-                                </select><!-- /.select-->
-                            </div><!-- /.model-select-icon -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>    
+                    <!-- <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Sturdy Themes</h3>
+                    <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{% static 'assets/img/bg-masthead.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <div class="single-model-search">
-                            <h2>car condition</h2>
-                            <div class="model-select-icon">
-                                <select class="form-control">
-
-                                      <option value="default">condition</option><!-- /.option-->
-
-                                      <option value="something">something</option><!-- /.option-->
-
-                                      <option value="something">something</option><!-- /.option-->
-                                      <option value="something">something</option><!-- /.option-->
-
-                                </select><!-- /.select-->
-                            </div><!-- /.model-select-icon -->
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Cras justo odio</li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
                         </div>
-                    </div>
-                    <div class="col-md-offset-1 col-md-2 col-sm-12">
-                        <div class="single-model-search">
-                            <h2>select model</h2>
-                            <div class="model-select-icon">
-                                <select class="form-control">
-
-                                      <option value="default">model</option><!-- /.option-->
-
-                                      <option value="kia-rio">kia-rio</option><!-- /.option-->
-
-                                      <option value="mitsubishi">mitsubishi</option><!-- /.option-->
-                                      <option value="ford">ford</option><!-- /.option-->
-
-                                </select><!-- /.select-->
-                            </div><!-- /.model-select-icon -->
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>    
+                    <!-- <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Up to Date</h3>
+                    <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{% static 'assets/img/bg-masthead.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                        <div class="single-model-search">
-                            <h2>select price</h2>
-                            <div class="model-select-icon">
-                                <select class="form-control">
-
-                                      <option value="default">price</option><!-- /.option-->
-
-                                      <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                      <option value="$0.00">$0.00</option><!-- /.option-->
-                                      <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                </select><!-- /.select-->
-                            </div><!-- /.model-select-icon -->
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Cras justo odio</li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
                         </div>
-                    </div>
-                    <div class="col-md-2 col-sm-12">
-                        <div class="single-model-search text-center">
-                            <button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
-                                search
-                            </button>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>    
+                    <!-- <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Ready to Publish</h3>
+                    <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{% static 'assets/img/bg-masthead.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Cras justo odio</li>
+                          <li class="list-group-item">Dapibus ac facilisis in</li>
+                          <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>    
+                    <!-- <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Made with Love</h3>
+                    <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <a href="#" class="btn btn-primary">Voir toutes les offres</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Marques et modèles populaires</h2>
+        <hr class="divider" />
+        <h5 class="text-center mt-0">Les modèles les plus demandés par nos clients, parcourez le catalogue des constructeurs automobile.</h5>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 12rem;height: 10rem;">
+                        <img src="{% static 'assets/img/brand/br1.png' %}" class="card-img-top" alt="..." style="height: 7rem;">
+                        <div class="card-body">
+                          <p class="card-text">Lorem</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 12rem;height: 10rem;">
+                        <img src="{% static 'assets/img/brand/br2.png' %}" class="card-img-top" alt="..." style="height: 7rem;">
+                        <div class="card-body">
+                          <p class="card-text">Lorem</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 12rem;height: 10rem;">
+                        <img src="{% static 'assets/img/brand/br3.png' %}" class="card-img-top" alt="..." style="height: 7rem;">
+                        <div class="card-body">
+                          <p class="card-text">Lorem</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="card" style="width: 12rem;height: 10rem;">
+                        <img src="{% static 'assets/img/brand/br4.png' %}" class="card-img-top" alt="..." style="height: 7rem;">
+                        <div class="card-body">
+                          <p class="card-text">Lorem</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <a href="#" class="btn btn-primary">Trouver une renault d'occasion</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services -->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Pourquoi choisir Nom d'entreprise ?</h2>
+        <hr class="divider" />
+        <h5 class="text-center mt-0">Profitez de l'expérience de nos conseillers et de la garantie d'un achat en toute sécurité.</h5>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-between align-items-center custom-container">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="{% static 'assets/img/facebook.svg' %}" class="card-img-top" alt="..." style="height: 3rem;">
+                    <p class="card-text mb-0">4&nbsp;sur&nbsp;528 avis</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <img src="{% static 'assets/img/google.svg' %}" class="card-img-top" alt="..." style="height: 3rem;">
+                    <p class="card-text mb-0">4&nbsp;sur&nbsp;528 avis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About-->
+<section class="page-section bg-primary" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Nous avons ce que vous chercher!</h2>
+                <hr class="divider divider-light" />
+                <p class="text-white-75 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, pariatur optio in minus similique repudiandae facilis debitis aperiam dignissimos modi corporis fugit ea sint nostrum repellat nesciunt recusandae ab facere!</p>
+                <a class="btn btn-light btn-xl" href="#services">Lorem</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Notre service</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Lorem ipsum</h3>
+                    <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Lorem ipsum</h3>
+                    <p class="text-muted mb-0">Lorem ipsum ipsum...</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Prêt?</h3>
+                    <p class="text-muted mb-0">Lorem ipsum ...</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Lorem</h3>
+                    <p class="text-muted mb-0">Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio-->
+<div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'assets/img/portfolio/fullsize/bg-masthead.jpg' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/thumbnails/bg-masthead.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'assets/img/portfolio/fullsize/bg-masthead.jpg' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/thumbnails/bg-masthead.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'assets/img/portfolio/fullsize/bg-masthead.jpg' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/thumbnails/bg-masthead.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'assets/img/portfolio/fullsize/bg-masthead.jpg' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/thumbnails/bg-masthead.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'assets/img/portfolio/fullsize/bg-masthead.jpg' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/thumbnails/bg-masthead.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% static 'assets/img/portfolio/fullsize/bg-masthead.jpg' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'assets/img/portfolio/thumbnails/bg-masthead.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </div>
-
-</section><!--/.welcome-hero-->
-<!--welcome-hero end -->
-
-<!--service start -->
-<section id="service" class="service">
-<div class="container">
-    <div class="service-content">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service-item">
-                    <div class="single-service-icon">
-                        <i class="flaticon-car"></i>
-                    </div>
-                    <h2><a href="#">largest dealership <span> of</span> car</a></h2>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
-                    </p>
-                </div>
+<!-- Call to action-->
+<section class="page-section bg-dark text-white">
+    <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente obcaecati</h2>
+        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Rechercher</a>
+    </div>
+</section>
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Lorem</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo</p>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service-item">
-                    <div class="single-service-icon">
-                        <i class="flaticon-car-repair"></i>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Nom Complet</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Nom obligatoire</div>
                     </div>
-                    <h2><a href="#">unlimited repair warrenty</a></h2>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
-                    </p>
-                </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Email obligatoire</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email non valide.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Numéro Téléphone</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Numéro Téléphone obligatoire</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message obligatoire</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Réussi</div>
+                            Pour activer cette formulaire, vous devez vous enregistrer
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Message d'erreur envoyé</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Soumettre</button></div>
+                </form>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service-item">
-                    <div class="single-service-icon">
-                        <i class="flaticon-car-1"></i>
-                    </div>
-                    <h2><a href="#">insurence support</a></h2>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia. 
-                    </p>
-                </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                <div>+33 - 000000000000</div>
             </div>
         </div>
     </div>
-</div><!--/.container-->
+</section>
 
-</section><!--/.service-->
-<!--service end-->
-
-<!--new-cars start -->
-<section id="new-cars" class="new-cars">
-<div class="container">
-    <div class="section-header">
-        <p>checkout <span>the</span> latest cars</p>
-        <h2>newest cars</h2>
-    </div><!--/.section-header-->
-    <div class="new-cars-content">
-        <div class="owl-carousel owl-theme" id="new-cars-carousel">
-            <div class="new-cars-item">
-                <div class="single-new-cars-item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12">
-                            <div class="new-cars-img">
-                                <img src="{% static 'images/new-cars-model/ncm1.png' %}" alt="img"/>
-                            </div><!--/.new-cars-img-->
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <div class="new-cars-txt">
-                                <h2><a href="#">chevrolet camaro <span> za100</span></a></h2>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                                </p>
-                                <p class="new-cars-para2">
-                                    Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
-                                </p>
-                                <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
-                                    view details
-                                </button>
-                            </div><!--/.new-cars-txt-->	
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.single-new-cars-item-->
-            </div><!--/.new-cars-item-->
-            <div class="new-cars-item">
-                <div class="single-new-cars-item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12">
-                            <div class="new-cars-img">
-                                <img src="{% static 'images/new-cars-model/ncm2.png' %}" alt="img"/>
-                            </div><!--/.new-cars-img-->
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <div class="new-cars-txt">
-                                <h2><a href="#">BMW series-3 wagon</a></h2>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                                </p>
-                                <p class="new-cars-para2">
-                                    Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
-                                </p>
-                                <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
-                                    view details
-                                </button>
-                            </div><!--/.new-cars-txt-->	
-                        </div><!--/.col-->
-                    </div><!--/.row-->	
-                </div><!--/.single-new-cars-item-->
-            </div><!--/.new-cars-item-->
-            <div class="new-cars-item">
-                <div class="single-new-cars-item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12">
-                            <div class="new-cars-img">
-                                <img src="{% static 'images/new-cars-model/ncm3.png' %}" alt="img"/>
-                            </div><!--/.new-cars-img-->
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <div class="new-cars-txt">
-                                <h2><a href="#">ferrari 488 superfast</a></h2>
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                                </p>
-                                <p class="new-cars-para2">
-                                    Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
-                                </p>
-                                <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
-                                    view details
-                                </button>
-                            </div><!--/.new-cars-txt-->	
-                        </div><!--/.col-->
-                    </div><!--/.row-->
-                </div><!--/.single-new-cars-item-->
-            </div><!--/.new-cars-item-->
-        </div><!--/#new-cars-carousel-->
-    </div><!--/.new-cars-content-->
-</div><!--/.container-->
-
-</section><!--/.new-cars-->
-<!--new-cars end -->
-
-<!--featured-cars start -->
-<section id="featured-cars" class="featured-cars">
-<div class="container">
-    <div class="section-header">
-        <p>checkout <span>the</span> featured cars</p>
-        <h2>featured cars</h2>
-    </div><!--/.section-header-->
-    <div class="featured-cars-content">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc1.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">BMW 6-series gran coupe</a></h2>
-                        <h3>$89,395</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc2.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">chevrolet camaro <span>wmv20</span></a></h2>
-                        <h3>$66,575</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc3.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">lamborghini <span>v520</span></a></h2>
-                        <h3>$125,250</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc4.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">audi <span> a3</span> sedan</a></h2>
-                        <h3>$95,500</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc4.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">infiniti <span>z5</span></a></h2>
-                        <h3>$36,850</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc5.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">porsche <span>718</span> cayman</a></h2>
-                        <h3>$48,500</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc7.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#"><span>bmw 8-</span>series coupe</a></h2>
-                        <h3>$56,000</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="single-featured-cars">
-                    <div class="featured-img-box">
-                        <div class="featured-cars-img">
-                            <img src="{% static 'images/featured-cars/fc8.png' %}" alt="cars">
-                        </div>
-                        <div class="featured-model-info">
-                            <p>
-                                model: 2017
-                                <span class="featured-mi-span"> 3100 mi</span> 
-                                <span class="featured-hp-span"> 240HP</span>
-                                 automatic
-                            </p>
-                        </div>
-                    </div>
-                    <div class="featured-cars-txt">
-                        <h2><a href="#">BMW <span> x</span>series-6</a></h2>
-                        <h3>$75,800</h3>
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!--/.container-->
-
-</section><!--/.featured-cars-->
-<!--featured-cars end -->
-
-<!-- clients-say strat -->
-<section id="clients-say"  class="clients-say">
-<div class="container">
-    <div class="section-header">
-        <h2>what our clients say</h2>
-    </div><!--/.section-header-->
-    <div class="row">
-        <div class="owl-carousel testimonial-carousel">
-            <div class="col-sm-3 col-xs-12">
-                <div class="single-testimonial-box">
-                    <div class="testimonial-description">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="{% static 'images/clients/c1.png' %}" alt="image of clients person" />
-                            </div><!--/.testimonial-img-->
-                        </div><!--/.testimonial-info-->
-                        <div class="testimonial-comment">
-                            <p>
-                                Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
-                            </p>
-                        </div><!--/.testimonial-comment-->
-                        <div class="testimonial-person">
-                            <h2><a href="#">tomas lili</a></h2>
-                            <h4>new york</h4>
-                        </div><!--/.testimonial-person-->
-                    </div><!--/.testimonial-description-->
-                </div><!--/.single-testimonial-box-->
-            </div><!--/.col-->
-            <div class="col-sm-3 col-xs-12">
-                <div class="single-testimonial-box">
-                    <div class="testimonial-description">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="{% static 'images/clients/c2.png' %}" alt="image of clients person" />
-                            </div><!--/.testimonial-img-->
-                        </div><!--/.testimonial-info-->
-                        <div class="testimonial-comment">
-                            <p>
-                                Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
-                            </p>
-                        </div><!--/.testimonial-comment-->
-                        <div class="testimonial-person">
-                            <h2><a href="#">romi rain</a></h2>
-                            <h4>london</h4>
-                        </div><!--/.testimonial-person-->
-                    </div><!--/.testimonial-description-->
-                </div><!--/.single-testimonial-box-->
-            </div><!--/.col-->
-            <div class="col-sm-3 col-xs-12">
-                <div class="single-testimonial-box">
-                    <div class="testimonial-description">
-                        <div class="testimonial-info">
-                            <div class="testimonial-img">
-                                <img src="{% static 'images/clients/c3.png' %}" alt="image of clients person" />
-                            </div><!--/.testimonial-img-->
-                        </div><!--/.testimonial-info-->
-                        <div class="testimonial-comment">
-                            <p>
-                                Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
-                            </p>
-                        </div><!--/.testimonial-comment-->
-                        <div class="testimonial-person">
-                            <h2><a href="#">john doe</a></h2>
-                            <h4>washington</h4>
-                        </div><!--/.testimonial-person-->
-                    </div><!--/.testimonial-description-->
-                </div><!--/.single-testimonial-box-->
-            </div><!--/.col-->
-        </div><!--/.testimonial-carousel-->
-    </div><!--/.row-->
-</div><!--/.container-->
-
-</section><!--/.clients-say-->	
-<!-- clients-say end -->
-
-<!--brand strat -->
-<section id="brand"  class="brand">
-<div class="container">
-    <div class="brand-area">
-        <div class="owl-carousel owl-theme brand-item">
-            <div class="item">
-                <a href="#">
-                    <img src="{% static 'images/brand/br1.png' %}" alt="brand-image" />
-                </a>
-            </div><!--/.item-->
-            <div class="item">
-                <a href="#">
-                    <img src="{% static 'images/brand/br2.png' %}" alt="brand-image" />
-                </a>
-            </div><!--/.item-->
-            <div class="item">
-                <a href="#">
-                    <img src="{% static 'images/brand/br3.png' %}" alt="brand-image" />
-                </a>
-            </div><!--/.item-->
-            <div class="item">
-                <a href="#">
-                    <img src="{% static 'images/brand/br4.png' %}" alt="brand-image" />
-                </a>
-            </div><!--/.item-->
-
-            <div class="item">
-                <a href="#">
-                    <img src="{% static 'images/brand/br5.png' %}" alt="brand-image" />
-                </a>
-            </div><!--/.item-->
-
-            <div class="item">
-                <a href="#">
-                    <img src="{% static 'images/brand/br6.png' %}" alt="brand-image" />
-                </a>
-            </div><!--/.item-->
-        </div><!--/.owl-carousel-->
-    </div><!--/.clients-area-->
-
-</div><!--/.container-->
-
-</section><!--/brand-->	
-<!--brand end -->
-
-<!--blog start -->
-<section id="blog" class="blog"></section><!--/.blog-->
-<!--blog end -->
-
-
-<main>
-    <!-- Main content will go here -->
-    <section class="highlight">
-        <p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</p>
-        <p>Aucun versement, de quelque nature que ce soit, ne peut être exigé d’un particulier avant l’obtention d’un ou plusieurs prêts d’argent.</p>
-    </section>
-    <section class="suggestion">
-        <p>Pensez à covoiturer <strong>#SeDéplacerMoinsPolluer</strong></p>
-    </section>
-</main>
 {% endblock %}
